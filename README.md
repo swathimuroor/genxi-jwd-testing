@@ -308,7 +308,7 @@ This should cause the API to give us back an error, looking something like:
 Finally, lets take out the password completly:
 
 ```js
-login('nick').then(response => console.log(response)).catch(err => console.log(err))
+login('aaron').then(response => console.log(response)).catch(err => console.log(err))
 ```
 
 Which should give us our final error.
