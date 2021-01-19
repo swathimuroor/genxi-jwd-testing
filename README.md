@@ -48,8 +48,8 @@ Notice how we pass `expect` an `arrow function`? That's because if passed the re
 Replace the `expect` lines with the following, refresh `SpecRunner.html` and have a look at the result.
 
 ```js
-expect(calculator.add('1', 2)).toThrow();
-expect(calculator.add(1, '2')).toThrow();
+expect(calculator.add('1', 2)).to.throw();
+expect(calculator.add(1, '2')).to.throw();
 ```
 
 You should see something like this:
