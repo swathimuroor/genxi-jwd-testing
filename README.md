@@ -54,7 +54,7 @@ expect(calculator.add(1, '2')).toThrow();
 
 You should see something like this:
 
-![Image of test result from calculator](images/test1.png)
+![Image of test result from calculator](test1.JPG)
 
 See how the error has been thrown and stopped our test from running? By using an arrow function and calling our function within it, we can let `mocha` call our function and check if it throws.
 
@@ -67,7 +67,7 @@ expect(() => calculator.add(1, '2')).to.throw();
 
 Much better:
 
-![Image of test](images/test2.png)
+![Image of test](test2.JPG)
 
 To complete the exercise, add unit tests for the rest of the methods on the `Calculator` class. Test that each method:
 
@@ -291,7 +291,7 @@ login('eve.holt@reqres.in', 'greg').then(response => console.log(response)).catc
 
 Here, we're calling `login` with the `email` of `'eve.holt@reqres.in'` and the `password` `'greg'`, we should see:
 
-![Image of SpecRunner.html](images/4.png)
+![Image of SpecRunner.html](test3.JPG)
 
 Here, the login has been sucessful and returned a `token` which we logged out.
 
@@ -303,7 +303,7 @@ login('aaron', 'greg').then(response => console.log(response)).catch(err => cons
 
 This should cause the API to give us back an error, looking something like:
 
-![Image of SpecRunner.html](images/5.png)
+![Image of SpecRunner.html](test4.JPG)
 
 Finally, lets take out the password completly:
 
@@ -311,9 +311,7 @@ Finally, lets take out the password completly:
 login('nick').then(response => console.log(response)).catch(err => console.log(err))
 ```
 
-Which should give us our final error, looking something like:
-
-![Image of SpecRunner.html](images/6.png)
+Which should give us our final error.
 
 Now we've gone through all the possible results from calling `login` using the _real_ API, let's go ahead and test these.
 
