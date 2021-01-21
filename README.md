@@ -9,7 +9,15 @@ There will be some practice exercises to test out the skills needed for testing 
 > #### Resources
 > - [mocha](https://mochajs.org/)
 > - [chai](https://www.chaijs.com/)
-      
+
+## Setup
+
+1. `fork` this repo and then use `git clone`
+2. `cd testing`
+3. `code .`
+4. `open index.html`
+5. `npm install chai-spies`
+
 ## Running tests
 
 - `open index.html`
@@ -312,6 +320,8 @@ login('aaron').then(response => console.log(response)).catch(err => console.log(
 ```
 
 Which should give us our final error.
+
+![Image of specrunner](test5.JPG)
 
 Now we've gone through all the possible results from calling `login` using the _real_ API, let's go ahead and test these.
 
